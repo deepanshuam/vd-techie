@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 const TopCompaniesSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,20 +10,21 @@ const TopCompaniesSection = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-gray-400 py-16">
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Left Side - Text Section */}
-        <div className="w-full md:w-1/2 text-center md:text-left pl-6">
-          <h2 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-black mb-4 animate-gradient">
+        <div className="w-full md:w-1/2 text-center md:text-left pl-32">
+          <h2 className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-black mb-4 animate-gradient">
             Top companies from all over India have hired VD Techie Trainees
           </h2>
           <p className="text-sm text-gray-600">
-            We have a free session starting soon – Join us now and meet us at Our Centre!
+            We have a free session starting soon – Join us now and meet us at
+            Our Centre!
           </p>
         </div>
 
         {/* Right Side - Button Section */}
-        <div className="w-full md:w-1/2 text-center mt-8 md:mt-0">
+        <div className="w-full pr-28 md:w-1/2 text-center mt-8 md:mt-0">
           <button
             onClick={openModal}
             className="px-6 py-3 bg-red-600 text-white text-lg rounded-lg shadow-lg hover:bg-red-700 focus:outline-none transition"
@@ -59,7 +59,9 @@ const TopCompaniesSection = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-gray-700 mb-2">Preferred Date</label>
+                <label className="block text-gray-700 mb-2">
+                  Preferred Date
+                </label>
                 <input
                   type="date"
                   className="w-full p-3 border border-gray-300 rounded-lg"

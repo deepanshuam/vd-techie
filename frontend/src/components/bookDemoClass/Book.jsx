@@ -36,8 +36,8 @@ const StartLearningNow = () => {
     <div className="bg-gray-100 py-16">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         {/* Left Section */}
-        <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-          <h2 className="text-5xl font-semibold bg-gradient-to-r from-red-600 to-black text-transparent bg-clip-text mb-4">
+        <div className="w-full pl-36 md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+          <h2 className="text-3xl font-semibold bg-gradient-to-r from-red-600 to-black text-transparent bg-clip-text mb-4">
             Start Learning Now!
           </h2>
           <p className="text-xl bg-gradient-to-r from-red-600 to-black text-transparent bg-clip-text mb-4">
@@ -51,7 +51,7 @@ const StartLearningNow = () => {
         {/* Right Section (Form) */}
         <div className="w-full md:w-2/5 bg-white p-6 md:px-10 py-8 rounded-lg shadow-lg">
           <h3 className="text-2xl font-semibold bg-gradient-to-r from-red-600 to-black text-transparent bg-clip-text mb-6 text-center">
-            Book Demo
+            Enquiry Now
           </h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -102,19 +102,6 @@ const StartLearningNow = () => {
               </select>
             </div>
 
-            <div className="flex items-center">
-              <input
-                type="checkbox"
-                id="mode"
-                name="mode"
-                checked={formData.mode === 'Online'}
-                onChange={handleCheckboxChange}
-                className="mr-2"
-              />
-              <label htmlFor="mode" className="bg-gradient-to-r from-red-600 to-black text-transparent bg-clip-text">
-                Online Mode
-              </label>
-            </div>
 
             <div>
               <label htmlFor="email" className="block bg-gradient-to-r from-red-600 to-black text-transparent bg-clip-text mb-2">

@@ -7,7 +7,7 @@ const contactUsSchema = new Schema({
     required: true,  // Name is required
     trim: true       // Removes any leading or trailing whitespace
   },
-  phoneNumber: {
+  phone: {
     type: String,
     required: true,  // Phone number is required
     match: [/^\d{10}$/, 'Please enter a valid phone number'] // Example validation for 10 digits

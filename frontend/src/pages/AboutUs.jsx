@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/aboutUs.jsx/banner";
-import Navbar from "../components/navbar/navbar";
+import Navbar from "../components/navbar/Navbar";
 import OurStory from "../components/aboutUs.jsx/Ourstory";
 import StatsSection from "../components/aboutUs.jsx/stats";
 import Cards from "../components/aboutUs.jsx/Cards"

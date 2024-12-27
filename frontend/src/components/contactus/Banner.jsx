@@ -33,7 +33,7 @@ const Contact = () => {
               showText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            {showText && "DG Royals is a Leading Professional Institute which helps students to transform their Professional Career. We Provide Industry Oriented Training and work Culture with our customised Courses to build their Future."}
+            {showText && "Vd infotech  is a Leading Professional Institute which helps students to transform their Professional Career. We Provide Industry Oriented Training and work Culture with our customised Courses to build their Future."}
           </p>
           <p
             ref={ref}

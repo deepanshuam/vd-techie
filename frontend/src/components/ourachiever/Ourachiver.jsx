@@ -1,16 +1,17 @@
 import React from "react";
 import { Carousel } from "3d-react-carousal";
-import bing from "../../assets/bing-ads.webp"
+import animation from "../baner/img/animation-banner-mob.webp"
 import dowanload from "../../assets/download.png"
+
 
 const OurAchievers = () => {
   const achievers = [
-    { id: 1, name: "web Development", image: bing, description: "Top Scorer in Web Development" },
-    { id: 2, name: "performance marketing", image: dowanload, description: "Best Innovator in AI Projects" },
-    { id: 3, name: "personal branding", image: "/images/achiever3.jpg", description: "Outstanding Performer in Data Science" },
-    { id: 4, name: "ui&ux", image: "/images/achiever4.jpg", description: "Excellence in Digital Marketing" },
-    { id: 5, name: "graphic designing", image: "/images/achiever5.jpg", description: "Top Graduate in Cloud Computing" },
-    { id: 6, name: "animation", image: "/images/achiever5.jpg", description: "Top Graduate in Cloud Computing" },
+    { id: 1, name: "Web Development", image: "", description: "Top Scorer in Web Development" },
+    { id: 2, name: "Performance marketing", image:"", description: "Best Innovator in AI Projects" },
+    { id: 3, name: "Personal branding", image: "/images/achiever3.jpg", description: "Outstanding Performer in Data Science" },
+    { id: 4, name: "Ui&Ux", image: "/images/achiever4.jpg", description: "Excellence in Digital Marketing" },
+    { id: 5, name: "Graphic designing", image: "/images/achiever5.jpg", description: "Top Graduate in Cloud Computing" },
+    { id: 6, name: "Animation", image: "/images/achiever5.jpg", description: "Top Graduate in Cloud Computing" },
   ];
 
   const slides = achievers.map((achiever) => (

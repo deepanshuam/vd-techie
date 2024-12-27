@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="bg-rose-950 text-white py-12">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-wrap justify-between">
           {/* Left Section: Courses List */}
@@ -37,7 +37,7 @@ const Footer = () => {
               </li>
               <li>Success Stories</li>
               <li>Submit Guest Post</li>
-              <li>Life at DG Royals</li>
+              <li>Life at Vd techie</li>
               <li>Students Portfolio</li>
               <li>
                 <a href="/hire" className="font-bold">
@@ -58,12 +58,12 @@ const Footer = () => {
               Pradesh 201002
             </p>
             <p className="mb-4">
-              +91-8447726000 / +91-8447729000 / +91-8585959688
+              +91-920-572-3999 
             </p>
             <p className="mb-4">
               Email:{" "}
               <a href="mailto:info.vd@gmail.com" className="text-blue-400">
-                info.vd@gmail.com
+                support@vdtechie.com
               </a>
             </p>
             <p className="mb-4">All Days: 09:00 AM - 7:00 PM</p>
@@ -79,6 +79,14 @@ const Footer = () => {
             ></iframe>
           </div>
         </div>
+      </div>
+      <div>
+        <p className="text-center text-white">
+          Copyright © 2025 Vd Techie. All rights reserved.
+        </p>
+        <p className="text-center text-white">
+          Crafted by Vd Infotech
+        </p>
       </div>
     </footer>
   );

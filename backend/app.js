@@ -3,7 +3,7 @@ import cors from "cors";
 
 import cookieParser from "cookie-parser";
 import userRouter from "./routes/user.Routes.js";
-import conatctRouter from "./routes/conatct.Routes.js"
+import conatctRouter from "./routes/conatct.Routes.js";
 const app = express();
 app.use(cors());
 // setup to access the permission of the cors
@@ -23,5 +23,5 @@ app.use(cookieParser());
 
 //routes path define
 app.use("/api/v1/users", userRouter);
-app.use("/api/v1/contact",conatctRouter); 
+app.use("/api/v1/contact", conatctRouter);
 export { app };

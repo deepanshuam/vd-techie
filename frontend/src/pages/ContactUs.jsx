@@ -1,6 +1,6 @@
 import React from 'react'
 import Contact from '../components/contactus/Banner'
-import Navbar from '../components/navbar/navbar'
+import Navbar from '../components/navbar/Navbar'
 import Form from '../components/contactus/Form'
 import ContactCard from '../components/contactus/Cards'
 import Footer from '../components/Footer/Footer'

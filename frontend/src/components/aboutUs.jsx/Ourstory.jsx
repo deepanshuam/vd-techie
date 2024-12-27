@@ -9,7 +9,7 @@ const OurStory = () => {
           Our Story
         </h2>
         <p className="text-gray-700 leading-relaxed text-lg">
-          DG Royals is the Professional Industrial Courses Leader which was
+          Vd techie is the Professional Industrial Courses Leader which was
           Established in 2018. We provide a New Age to Individuals to brighten
           up their Future with the Best Career Courses Training. We worked hard
           to ensure learners have access to the Industry Oriented Future skill

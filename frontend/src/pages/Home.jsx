@@ -1,6 +1,6 @@
 import React from "react";
 // import UpperNav from "../components/navbar/upperNav.jsx";
-import Navbar from "../components/navbar/navbar.jsx";
+// import Navbar from "../components/navbar/navbar.jsx";
 import Banner from "../components/baner/baner.jsx";
 import ProgramOverview from "../components/programe/Programe.jsx";
 import LongTermCourses from "../components/cards/Cards.jsx";
@@ -17,34 +17,32 @@ import CardSection from "../components/cards/CardSection.jsx";
 import Carousel from "../components/Courosal.jsx";
 import CurveCardSlider from "../components/Courosal.jsx";
 import ShuffleHero from "../components/Courosal.jsx";
-import HoverCard from "../components/Hovver.jsx";
-import FooterWithMovingCircle from "../components/Hovver.jsx";
+
+import Navbar from "../components/navbar/Navbar.jsx";
+import Img from "../components/baner/img.jsx";
 const Home = () => {
   return (
     <>
-      <div>
-        
-      </div>
+      <div></div>
       <div>
         <Navbar />
       </div>
-
-      <ShuffleHero/>
-      <ProgramOverview/>
+      <Img />
+      <ShuffleHero />
+      <ProgramOverview />
       {/* <LongTermCourses/> */}
-      <OurAchievers/>
-      <CardSection/>
-      <WhyLearning/>
+      <OurAchievers />
+      <CardSection />
+      <WhyLearning />
       {/* <VideoSection/> */}
       {/* <CurveCardSlider/> */}
-      <WhyJoinVDTechie/>
-      <TopCompaniesSection/>
-      <LearnerTestimonials/>
-      < StartLearningNow/>
-      <MakeYourJourneyEasier/>
+      <WhyJoinVDTechie />
+      {/* <TopCompaniesSection /> */}
+      {/* <LearnerTestimonials/> */}
+      <StartLearningNow />
+      <MakeYourJourneyEasier />
       {/* <FooterWithMovingCircle/> */}
-      <Footer/>
-
+      <Footer />
     </>
   );
 };

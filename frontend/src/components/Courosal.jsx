@@ -1,150 +1,32 @@
 
-// import { motion } from "framer-motion";
-// import { useEffect, useRef, useState } from "react";
-
-// const ShuffleHero = () => {
-//   return (
-//     <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
-//       <div>
-//         <span className="block mb-4 text-xs md:text-sm text-indigo-500 font-medium">
-//           Better every day
-//         </span>
-//         <h3 className="text-4xl md:text-6xl font-semibold">
-//           Let's change it up a bit
-//         </h3>
-//         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-//           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
-//           error repellat voluptatibus ad.
-//         </p>
-//         <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
-//           Find a class
-//         </button>
-//       </div>
-//       <ShuffleGrid />
-//     </section>
-//   );
-// };
-
-// const shuffle = (array) => {
-
-
-    
-//   let currentIndex = array.length,
-//     randomIndex;
-
-//   while (currentIndex != 0) {
-//     randomIndex = Math.floor(Math.random() * currentIndex);
-//     currentIndex--;
-
-//     [array[currentIndex], array[randomIndex]] = [
-//       array[randomIndex],
-//       array[currentIndex],
-//     ];
-//   }
-
-//   return array;
-// };
-
-// const squareData = [
-//   {
-//     id: 1,
-//     src: "https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-//   },
-//   {
-//     id: 2,
-//     src: "https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-//   },
-//   {
-//     id: 3,
-//     src: "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-//   },
-//   {
-//     id: 4,
-//     src: "https://images.unsplash.com/photo-1580238053495-b9720401fd45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-//   },
-//   {
-//     id: 5,
-//     src: "https://images.unsplash.com/photo-1569074187119-c87815b476da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
-//   },
-//   {
-//     id: 6,
-//     src: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-//   },
-//   {
-//     id: 7,
-//     src: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-//   },
-//   {
-//     id: 8,
-//     src: "https://plus.unsplash.com/premium_photo-1671436824833-91c0741e89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-//   },
-//   {
-//     id: 9,
-//     src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-//   },
-  
-// ];
-
-// const generateSquares = () => {
-//   return shuffle(squareData).map((sq) => (
-//     <motion.div
-//       key={sq.id}
-//       layout
-//       transition={{ duration: 1.5, type: "spring" }}
-//       className="w-full h-full"
-//       style={{
-//         backgroundImage: `url(${sq.src})`,
-//         backgroundSize: "cover",
-//       }}
-//     ></motion.div>
-//   ));
-// };
-
-// const ShuffleGrid = () => {
-//   const timeoutRef = useRef(null);
-//   const [squares, setSquares] = useState(generateSquares());
-
-//   useEffect(() => {
-//     shuffleSquares();
-
-//     return () => clearTimeout(timeoutRef.current);
-//   }, []);
-
-//   const shuffleSquares = () => {
-//     setSquares(generateSquares());
-
-//     timeoutRef.current = setTimeout(shuffleSquares, 3000);
-//   };
-
-//   return (
-//     <div className="grid grid-cols-3 grid-rows-3 h-[450px] gap-1 ">
-//       {squares.map((sq) => sq)}
-//     </div>
-//   );
-// };
-
-// export default ShuffleHero;
-
 
 
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import img from "../components/baner/img/1-4-qnmtcqwu8z89v4xaj1ori48g4vdmo0lgewgsfzxa60.jpg"
+import img1 from "../components/baner/img/2-1-qnmqsu8y2s544m9vlw1448y0rkq22zlrfwg30ifltk.jpg"
+import img2 from "../components/baner/img/3-1-qnmqsyy51e3wnhe58vhfp7e0cc4ytqfnyj3l1za260.jpg"
+import img3 from "../components/baner/img/5-1024x1024.jpg.webp"
+import img4 from "../components/baner/img/6-1-qnmqt9ad1hzjthtgri00t7damqbhgldzu2jeufkrso.jpg"
+import img5 from "../components/baner/img/6-3.jpg.webp"
+import img6 from "../components/baner/img/6-4-qnmtd6w3h5u5cia2xqlf6i7a8f6vavcw53k1lp9l88.jpg"
+import img7 from "../components/baner/img/9-3-qnmtdj3zy0avjfsbydvkkx49yfin2xpeis1cuargzc.jpg"
+import img8 from "../components/baner/img/10-2-qnmtdlxiiieqi9o8hx3gaeenql4qq10lj5zta4nago.jpg"
 
 const ShuffleHero = () => {
   return (
     <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
       <div>
-        <span className="block mb-4 text-xs md:text-sm text-indigo-500 font-medium">
-          Better every day
+        <span className="block mb-4 text-xs md:text-sm text-red-500 font-medium">
+        What is Digital Marketing Course?
         </span>
-        <h3 className="text-4xl md:text-6xl font-semibold">
-          Let's change it up a bit
+        <h3 className="text-xl md:text-3xl font-semibold">
+        Here Before Start Learing Digital Marketing You Need To First Know What is Digital Marketing?
         </h3>
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
-          error repellat voluptatibus ad.
+        In Simple and Easy Language Digital Marketing is a Platform Where You Promote Products or Services through Various Online platforms. Digital Marketing Connects all of Company’s Efforts to Engage Customers using Online Platform. Online marketing promotes products and services to potential customers using online channels including search engine optimization (SEO), pay-per-click (PPC) advertising, social media, mobile marketing, online customer communities, webinars, and other video-based content.
         </p>
-        <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
+        <button className="bg-red-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Find a class
         </button>
       </div>
@@ -173,39 +55,39 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    src: img,
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    src:img1
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    src: img2,
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1580238053495-b9720401fd45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    src: img3,
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1569074187119-c87815b476da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
+    src: img4,
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    src: img5,
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    src: img6,
   },
   {
     id: 8,
-    src: "https://plus.unsplash.com/premium_photo-1671436824833-91c0741e89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    src: img7,
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    src: img8,
   },
 ];
 
@@ -250,7 +132,7 @@ const ShuffleGrid = () => {
   };
 
   return (
-    <div className="grid grid-cols-3 grid-rows-3 h-[450px] gap-1">
+    <div className="grid grid-cols-3 grid-rows-3 h-[486px] gap-1">
       {squares.map((sq) => sq)}
     </div>
   );
