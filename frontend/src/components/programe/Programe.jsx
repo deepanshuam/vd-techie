@@ -89,7 +89,7 @@ const ProgramOverview = () => {
         {/* Right Side */}
         <div className="w-full md:w-1/3 bg-white p-8 rounded-lg shadow-lg flex flex-col">
           <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
-            Learn More About The Course Program
+            Enquiry Form
           </h3>
 
           {/* Form Section */}
